@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:padding="@dimen/standard_16dp">
+
+    <TextView
+        android:id="@+id/text_view_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/standard_8dp"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:text="@string/bottom_sheet_barcode_this_is_the_address"
+        android:textColor="#2B2B2B" />
+
+    <TextView
+        android:id="@+id/text_view_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="#002865" />
+
+    <TextView
+        android:id="@+id/text_view_store_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/standard_12dp"
+        android:background="#00A5E6"
+        android:paddingLeft="@dimen/standard_12dp"
+        android:paddingTop="@dimen/standard_4dp"
+        android:paddingRight="@dimen/standard_12dp"
+        android:paddingBottom="@dimen/standard_4dp"
+        android:text="@string/bottom_sheet_barcode_copy_to_clipboard"
+        android:textColor="#ffffff" />
+
+</LinearLayout>

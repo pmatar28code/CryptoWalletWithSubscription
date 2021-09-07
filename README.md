@@ -1,1 +1,1 @@
-# CryptoWalletWithSubscription
+# CryptoWallet
