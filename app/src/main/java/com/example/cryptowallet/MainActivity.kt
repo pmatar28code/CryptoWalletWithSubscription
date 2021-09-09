@@ -5,11 +5,14 @@ import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Bundle
 import android.view.LayoutInflater
+import android.view.MenuItem
 import android.widget.Button
 import android.widget.Toast
+import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import androidx.core.view.GravityCompat
 import androidx.core.view.isGone
 import androidx.fragment.app.Fragment
 import com.example.cryptowallet.databinding.ActivityMainBinding
@@ -17,6 +20,7 @@ import com.example.cryptowallet.fragments.*
 import com.example.cryptowallet.network.classesapi.AccessToken
 import com.example.cryptowallet.utilities.EncSharedPreferences
 import com.google.android.material.bottomsheet.BottomSheetDialog
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
     companion object {
@@ -38,6 +42,14 @@ class MainActivity : AppCompatActivity() {
         val inflater = LayoutInflater.from(this)
         val binding = ActivityMainBinding.inflate(inflater)
         setContentView(binding.root)
+
+        setSupportActionBar(findViewById(R.id.toolbar))
+        val drawer = binding.drawer
+        val drawerToggle = ActionBarDrawerToggle(this, drawer, R.string.open, R.string.close)
+        drawer.addDrawerListener(drawerToggle)
+        drawerToggle.syncState()
+
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         if (allPermissionsGranted()) {
         } else {
@@ -139,5 +151,14 @@ class MainActivity : AppCompatActivity() {
             .replace(R.id.fragment_container, fragment)
             .addToBackStack("back")
             .commit()
+    }
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            android.R.id.home -> {
+                drawer.openDrawer(GravityCompat.START)
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
     }
 }
