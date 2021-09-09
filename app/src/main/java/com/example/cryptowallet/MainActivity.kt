@@ -46,16 +46,7 @@ class MainActivity : AppCompatActivity() {
         val binding = ActivityMainBinding.inflate(inflater)
         setContentView(binding.root)
 
-        binding.topAppBar.setNavigationOnClickListener {
-            binding.drawerLayout.openDrawer(Gravity.LEFT)
-        }
-
-        binding.navigationView.setNavigationItemSelectedListener { menuItem ->
-            // Handle menu item selected
-            menuItem.isChecked = true
-            drawerLayout.closeDrawers()
-            true
-        }
+        setTopAppBarAndNavMenuItems(binding)
 
         if (allPermissionsGranted()) {
         } else {
@@ -157,6 +148,48 @@ class MainActivity : AppCompatActivity() {
             .replace(R.id.fragment_container, fragment)
             .addToBackStack("back")
             .commit()
+    }
+
+    private fun setTopAppBarAndNavMenuItems(binding:ActivityMainBinding){
+        binding.topAppBar.setNavigationOnClickListener {
+            binding.drawerLayout.openDrawer(Gravity.LEFT)
+        }
+        binding.navigationView.setNavigationItemSelectedListener { menuItem ->
+            // Handle menu item selected
+            //menuItem.isChecked = true
+            //drawerLayout.closeDrawers()
+            //true
+            when (menuItem.itemId) {
+                R.id.nav_home -> {
+                    // Handle favorite icon press
+                    swapFragments(AuthorizationFragment())
+                    drawerLayout.closeDrawers()
+                    true
+                }
+                R.id.nav_gallery -> {
+                    swapFragments(SendFragment())
+                    drawerLayout.closeDrawers()
+                    true
+                }
+                R.id.nav_slideshow -> {
+                    drawerLayout.closeDrawers()
+                    true
+                }
+                R.id.nav_send -> {
+                    drawerLayout.closeDrawers()
+                    true
+                }
+                R.id.nav_share -> {
+                    drawerLayout.closeDrawers()
+                    true
+                }
+                R.id.nav_tools -> {
+                    drawerLayout.closeDrawers()
+                    true
+                }
+                else -> false
+            }
+        }
     }
 
 }
