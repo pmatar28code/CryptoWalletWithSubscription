@@ -9,7 +9,6 @@
         android:layout_height="match_parent">
 
         <com.google.android.material.card.MaterialCardView
-            android:id="@+id/cardLogo_transaction_details_dialog"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/standard_8dp"
@@ -26,7 +25,7 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:id="@+id/wallet_transaction_details_image"
+                    android:id="@+id/walletTransactionDetailsImage"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:contentDescription="@string/fragment_wallet_details_logo"
@@ -34,7 +33,6 @@
                     app:srcCompat="@drawable/logo" />
 
                 <TextView
-                    android:id="@+id/wallet_transaction_details_name_text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/standard_4dp"
@@ -50,12 +48,11 @@
                     android:background="@android:drawable/editbox_background" />
 
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/linearLayoutTransactionDetails"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
                 <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/recycler_transaction_details_dialog"
+                    android:id="@+id/recyclerTransactionDetailsDialog"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@android:drawable/editbox_background"/>

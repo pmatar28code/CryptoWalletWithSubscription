@@ -4,7 +4,20 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.14895833333333333" />
+        <entry key="app/src/main/res/layout/fragment_authorization.xml" value="0.14895833333333333" />
+        <entry key="app/src/main/res/layout/fragment_request.xml" value="0.14895833333333333" />
+        <entry key="app/src/main/res/layout/fragment_request_money_dialog.xml" value="0.14895833333333333" />
+        <entry key="app/src/main/res/layout/fragment_send.xml" value="0.14895833333333333" />
+        <entry key="app/src/main/res/layout/fragment_send_money_2fa_dialog.xml" value="0.14895833333333333" />
+        <entry key="app/src/main/res/layout/fragment_send_money_confirm_dialog.xml" value="0.14895833333333333" />
+        <entry key="app/src/main/res/layout/fragment_show_transactions.xml" value="0.14895833333333333" />
+        <entry key="app/src/main/res/layout/fragment_subscription.xml" value="0.26944444444444443" />
+        <entry key="app/src/main/res/layout/fragment_transactions_details_dialog.xml" value="0.14895833333333333" />
+        <entry key="app/src/main/res/layout/fragment_wallet.xml" value="0.1945578231292517" />
+        <entry key="app/src/main/res/layout/fragment_wallet_details.xml" value="0.25688976377952755" />
         <entry key="app/src/main/res/layout/header_navigation_drawer.xml" value="0.14895833333333333" />
+        <entry key="app/src/main/res/layout/item_transactions.xml" value="0.14895833333333333" />
+        <entry key="app/src/main/res/layout/item_wallets.xml" value="0.14895833333333333" />
         <entry key="app/src/main/res/menu/main_menu.xml" value="0.14895833333333333" />
         <entry key="app/src/main/res/menu/navigation_drawer.xml" value="0.27794871794871795" />
       </map>

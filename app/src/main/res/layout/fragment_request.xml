@@ -24,7 +24,6 @@
             android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/logo_image_request"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
                 android:contentDescription="@string/fragment_request_content_description_media"
@@ -81,7 +80,6 @@
     </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.card.MaterialCardView
-        android:id="@+id/card_request"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginStart="@dimen/standard_16dp"
@@ -96,12 +94,11 @@
         app:layout_constraintTop_toBottomOf="@+id/cardSearch_request">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/linearLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/wallets_request_recycler_view"
+                android:id="@+id/walletsRequestRecyclerView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:layout_constraintBottom_toBottomOf="parent"

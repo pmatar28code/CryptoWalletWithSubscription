@@ -5,7 +5,6 @@
     android:layout_height="wrap_content">
 
     <com.google.android.material.card.MaterialCardView
-        android:id="@+id/card_items_transaction_details"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/standard_10dp"
@@ -22,7 +21,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/transaction_id_text"
+                android:id="@+id/transactionIdText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
@@ -32,7 +31,7 @@
                 android:background="@android:drawable/editbox_background"/>
 
             <TextView
-                android:id="@+id/transaction_amount_currency_text"
+                android:id="@+id/transactionAmountCurrencyText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
@@ -42,7 +41,7 @@
                 android:background="@android:drawable/editbox_background"/>
 
             <TextView
-                android:id="@+id/transaction_status_text"
+                android:id="@+id/transactionStatusText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
@@ -52,7 +51,7 @@
                 android:background="@android:drawable/editbox_background"/>
 
             <TextView
-                android:id="@+id/transaction_native_amount_currency_text"
+                android:id="@+id/transactionTypeText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
@@ -62,7 +61,7 @@
                 android:background="@android:drawable/editbox_background"/>
 
             <TextView
-                android:id="@+id/transaction_type_text"
+                android:id="@+id/transactionNativeAmountCurrencyText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
@@ -72,7 +71,7 @@
                 android:background="@android:drawable/editbox_background"/>
 
             <TextView
-                android:id="@+id/transaction_date_time_text"
+                android:id="@+id/transactionDateTimeText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAlignment="center"

@@ -10,7 +10,6 @@
     <string name="bottom_sheet_menu_cancel">Cancel</string>
     <string name="fragment_request_content_description_media">content_description_media</string>
     <string name="fragment_request_request_money_share_addrress_qr">Request Money (Share Addrress/Qr)</string>
-    <string name="fragment_request_money_dialog_content_description_mediax">content_description_media</string>
     <string name="fragment_request_money_dialog_content_description_media">content_description_media</string>
     <string name="fragment_request_money_dialog_address">Address:</string>
     <string name="fragment_send_content_description_media">content_description_media</string>
@@ -25,8 +24,6 @@
     <string name="fragment_send_money2fa_dialog_two_factor_authentication_token_recieved_from_sms">Please wait for SMS</string>
     <string name="fragment_send_money_confirm_dialog_content_description_media">content_description_media</string>
     <string name="fragment_send_money_confirm_dialog_confirmation">Confirmation:</string>
-    <string name="fragment_transaction_details_content_description_media">content_description_media</string>
-    <string name="fragment_transaction_details_transactions">Transactions:</string>
     <string name="fragment_wallet_content_description_media">content_description_media</string>
     <string name="fragment_wallet_your_wallets_click_for_details">Your Wallets (Click for details)</string>
     <string name="fragment_wallet_details_logo">logo</string>
@@ -43,6 +40,4 @@
     <string name="fragment_show_transactions_select_for_details">Transactions(Select for Details)</string>
     <string name="bottom_nav_menu_transactions">Transactions</string>
     <string name="bottom_nav_menu_logout">Logout</string>
-    <string name="open">open</string>
-    <string name="close">close</string>
 </resources>
